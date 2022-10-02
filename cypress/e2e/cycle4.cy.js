@@ -214,5 +214,14 @@ context("Get to cycle 4", () => {
       cy.get("[type = submit]").click();
       cy.contains("Total Household points: 28");
     });
+
+    it("Calcs correct input for all over 100", () => {
+      applyAllIndv("1", "4");
+      applyAllIndv("2", "4");
+      applyAllIndv("3", "4");
+      applyAllIndv("4", "4");
+      cy.get("[type = submit]").click();
+      cy.contains("Total Household points: 28");
+    });
   });
 });

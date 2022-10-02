@@ -237,5 +237,15 @@ context("Get to cycle 5", () => {
       cy.get("[type = submit]").click();
       cy.contains("Total Household points: 70");
     });
+
+    it("Calcs correct input for all over 100", () => {
+      applyAllIndv("1", "3");
+      applyAllIndv("2", "3");
+      applyAllIndv("3", "3");
+      applyAllIndv("4", "3");
+      applyAllIndv("5", "3");
+      cy.get("[type = submit]").click();
+      cy.contains("Total Household points: 105");
+    });
   });
 });
