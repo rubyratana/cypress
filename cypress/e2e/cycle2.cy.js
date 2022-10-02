@@ -107,14 +107,14 @@ context("Get to cycle 2", () => {
 
     it("deny enter negative number", () => {
       cy.get("[id^= individual-]").clear();
-      applyAll("1", "-1");
-      applyAll("2", "-1");
+      applyAllIndv("1", "-1");
+      applyAllIndv("2", "-1");
       cy.get("[type = submit]").click("");
       cy.contains("Total Household points: 0");
     });
   });
 
-  describe("Enter wrong calc", () => {
+  describe("Test calculations", () => {
     it("More than 7 day 1", () => {
       indivMax("1");
     });

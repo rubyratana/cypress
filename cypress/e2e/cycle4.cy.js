@@ -144,7 +144,7 @@ context("Get to cycle 4", () => {
     });
   });
 
-  describe("Enter wrong calc", () => {
+  describe("Test calculations", () => {
     it("More than 7 day 1", () => {
       indivMax("1");
     });

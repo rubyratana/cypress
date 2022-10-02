@@ -104,7 +104,7 @@ context("Get to cycle 1", () => {
     });
   });
 
-  describe("Enter wrong calc", () => {
+  describe("Test calculations", () => {
     it("More than 7 day 1", () => {
       cy.get("[id = individual-1-1]").type("8");
       cy.get("[type = submit]").click();
