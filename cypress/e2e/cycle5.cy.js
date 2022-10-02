@@ -47,7 +47,7 @@ context("Get to cycle 5", () => {
     cy.contains("a", "5+").click();
   });
 
-  /*describe("Enter wrong input", () => {
+  describe("Enter wrong input", () => {
     it("deny enter nothing", () => {
       cy.get("[id^= individual-]").clear();
       cy.get("[type = submit]").click();
@@ -157,7 +157,7 @@ context("Get to cycle 5", () => {
       cy.get("[type = submit]").click("");
       cy.contains("Total Household points: 0");
     });
-  });*/
+  });
 
   describe("Test calculations", () => {
     it("More than 7 day 1", () => {
